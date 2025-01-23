@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.secondary-button-wrapper {
+    background-image: linear-gradient(to right, #3CD2FB, transparent, #3CD2FB);
+}
+
+.bg-tokens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#hero {
+    height: calc(100vh - 60px);
+}
+
+#banner-text {
+    background: linear-gradient(90.35deg, #59AED9 11.3%, #4BD29C 88.7%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#wind {
+    background: linear-gradient(#65CCFF, #3D7A99);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0rem 0rem 1rem #3CD2FB;
+}
+
+.wind-container {
+    border: solid; /* Border thickness */
+    border-image: linear-gradient(to right, #3D7A9900, #65CCFF, #3D7A9900) 1; /* Gradient direction */
+    border-width: 0 0 2px 0;
+}
+
+.welcome-bg {
+    background-image: radial-gradient(#3CD2FB, transparent);
+    background-position: center;
+    background-size: cover;
+}
+
+.ui-border {
+    @apply rounded-2xl;
+}
+
+.swap-button-container {
+    box-shadow: 0 0 20rem 3rem #3CD2FB;
+    background-image: linear-gradient(to right, #3CD2FB, #183435, #3CD2FB);
+    @apply transition-all duration-300;
+}
+
+.swap-button {
+    background-image: radial-gradient(#3d98c5, #1A292C);
+}
+
+.bubble-container {
+    background-image: linear-gradient(#636368, #232325);
+    border-radius: 10px;
+    animation: bubble 0.5s ease-in 0s 1 forwards;
+}
+
+.bubble {
+    background-image: linear-gradient(#1A1A1C, #161618);
+    border-radius: 9px;
+}
+
+@keyframes bubble {
+    from { scale: 0% }
+    to { scale: 100% }
+}
