@@ -10,9 +10,9 @@ export default function HomePage() {
   const SwapDisplay = () => (
     <div className="bg-gradient-to-b swap-display from-[#3CD2FB] to-transparent rounded-2xl p-[2px]">
       <div className="w-full flex flex-col items-center justify-start">
-        <div className="max-w-[450px] w-full h-fit p-2 bg-[#18181b] ui-border relative">
+        <div className="max-w-[450px] w-full h-fit p-2 bg-[#0F0F11] ui-border relative">
           <div className="w-full h-full rounded-xl gap-2 bg-[#27272a] shadow-inner shadow-[#00000050] py-3 px-4 flex flex-col">
-            <div className="py-1 px-2 rounded-lg bg-[#18181b] shadow-sm shadow-[#00000050]">
+            <div className="py-1 px-2 rounded-lg bg-[#0F0F11] shadow-sm shadow-[#00000050]">
               <p className="text-xs">Configure Swap</p>
             </div>
             <div className="flex flex-row items-center bg-[#3f3f46] h-12 rounded-lg">
@@ -20,7 +20,7 @@ export default function HomePage() {
                 <p className="text-xs opacity-50">send</p>
                 <p className="text-md opacity-50">Enter amount</p>
               </div>
-              <div className="bg-[#18181b] h-full flex flex-row w-40 justify-evenly items-center px-2 gap-2 rounded-r-lg shadow-sm shadow-[#00000050]">
+              <div className="bg-[#0F0F11] h-full flex flex-row w-40 justify-evenly items-center px-2 gap-2 rounded-r-lg shadow-sm shadow-[#00000050]">
                 <Image src="https://static.simpleswap.io/images/currencies-logo/ethbsc.svg" alt="" height={20} width={20}/>
                 <p className="font-bold text-sm">ETH</p>
                 <div className="bg-indigo-400 py-[2px] px-2 rounded-full">
@@ -34,7 +34,7 @@ export default function HomePage() {
                 <p className="text-xs opacity-50">send</p>
                 <p className="text-md opacity-50">Enter amount</p>
               </div>
-              <div className="bg-[#18181b] h-full flex flex-row w-40 justify-evenly items-center px-2 gap-2 rounded-r-lg">
+              <div className="bg-[#0F0F11] h-full flex flex-row w-40 justify-evenly items-center px-2 gap-2 rounded-r-lg">
                 <Image src="https://static.simpleswap.io/images/currencies-logo/usdcepoly.svg" alt="" height={20} width={20}/>
                 <p className="font-bold text-sm">USDC</p>
                 <div className="bg-indigo-400 py-[2px] px-2 rounded-full">
@@ -43,7 +43,7 @@ export default function HomePage() {
                 <Image src="/icons/chevron.svg" alt="" height={15} width={15}/>
               </div>
             </div>
-            <div className="py-1 px-2 rounded-lg bg-[#18181b] shadow-sm shadow-[#00000050]">
+            <div className="py-1 px-2 rounded-lg bg-[#0F0F11] shadow-sm shadow-[#00000050]">
               <p className="text-xs">Receiver Address</p>
             </div>
             <div className="flex flex-row items-center bg-[#3f3f46] h-12 rounded-lg">
@@ -55,7 +55,7 @@ export default function HomePage() {
               <p className="">Create order</p>
             </div>
           </div>
-          <div className="bg-gradient-to-b from-transparent to-[#0F0F11] inset-0 absolute"/>
+          <div className="bg-gradient-to-b from-transparent to-[#18181b] inset-0 absolute"/>
         </div>
       </div>
     </div>
@@ -142,13 +142,13 @@ export default function HomePage() {
         <Image src="/icons/chevron.svg" className="z-10 opacity-20" alt="" height={20} width={20} />
         <div className="absolute bottom-0">
           <svg width="4667" height="47" viewBox="0 0 4667 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 47V18H2151.31L2167.81 1.5H2500.81L2517.81 18.5H4667V47H0Z" fill="#18181B"/>
+            <path d="M0 47V18H2151.31L2167.81 1.5H2500.81L2517.81 18.5H4667V47H0Z" fill="#0F0F11"/>
             <path d="M2150.83 17.01L2167.35 0.48999H2501.24L2518.24 17.49H4667V18.49H2517.82L2500.83 1.48999H2167.84L2151.32 18.01L0 18V17L2150.83 17.01Z" fill="#2F3D46"/>
           </svg>
         </div>
       </div>
 
-      <div className="bg-[#18181B] w-full pt-40">
+      <div className="bg-[#0F0F11] w-full pt-40">
         <Section>
           {(visible: boolean) => (
             <section className={`w-full relative xl:px-10 lg:px-10 px-3`}>
@@ -169,20 +169,20 @@ export default function HomePage() {
         </Section>
       </div>
 
-      <div className="bg-[#18181B] w-full pt-80">
+      <div className="bg-[#0F0F11] w-full pt-80">
         <Section>
           {(visible: boolean) => (
-            <div className={`bg-[#18181B] w-full half-tone transition-all duration-700`}>
+            <div className={`bg-[#0F0F11] w-full half-tone transition-all duration-700`}>
               <div className="flex flex-row">
                 <div className="flex-1 border-b-[2px] border-b-[#2F3D46] h-[400px] xl:block lg:block hidden" />
                 <section className="w-full max-w-[1400px] xl:px-0 lg:px-0 px-5">
                   <div className="w-full xl:h-[400px] lg:h-[400px] flex xl:flex-row lg:flex-row flex-col-reverse relative">
-                    <div className="xl:w-1/2 lg:w-1/2 w-full h-full xl:bg-[#18181B] lg:bg-[#18181B] relative flex items-center justify-center">
+                    <div className="xl:w-1/2 lg:w-1/2 w-full h-full xl:bg-[#0F0F11] lg:bg-[#0F0F11] relative flex items-center justify-center">
                       <Image src="/graphics/lock-draft.png" className={`${visible ? "" : "translate-y-10 opacity-0"} transition-all duration-500 delay-300`} alt="" height={400} width={400} />
                       <div className="absolute bottom-0 top-1/2 left-0 right-0 rounded-br-2xl border-b-[2px] border-b-[#2F3D46] border-r-[2px] border-r-[#2F3D46]" />
                     </div>
                     <div className="xl:w-1/2 lg:w-1/2 w-full h-full relative py-12">
-                      <div className="flex flex-col px-10 justify-center items-center gap-5 h-full w-full overflow-clip rounded-tl-xl xl:bg-[#0F0F11] lg:bg-[#0F0F11] z-10 relative">
+                      <div className="flex flex-col px-10 justify-center items-center gap-5 h-full w-full overflow-clip rounded-tl-xl xl:bg-[#18181b] lg:bg-[#18181b] z-10 relative">
                         <h2 className={`${visible ? "" : "translate-y-10 opacity-0"} transition-all duration-500 text-5xl font-share_mono text-[#59AED9] w-full`}>ZAGSWAP</h2>
                         <p className={`${visible ? "" : "translate-y-10 opacity-0"} transition-all duration-500 delay-100 text-center px-10 font-sofia font-thin text-xl`}>Conceal your token swap and bridge actions safely with our reverse proxy token swap system</p>
                         <div className={`${visible ? "" : "translate-y-10 opacity-0"} transition-all duration-500 delay-200 flex xl:flex-row lg:flex-row flex-col gap-5 w-full px-10`}>
@@ -213,7 +213,7 @@ export default function HomePage() {
         </Section>
       </div>
 
-      <div className="bg-[#0F0F11] w-full pt-80">
+      <div className="bg-[#18181b] w-full pt-80">
         <Section>
           {(visible: boolean) => (
             <section className={`w-full relative xl:px-10 lg:px-10 px-3`}>

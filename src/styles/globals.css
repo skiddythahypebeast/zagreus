@@ -22,7 +22,7 @@
 
 @media (min-width: 1024px) {
     .half-tone {
-        background-image: linear-gradient(to right, #18181B 50%, #0F0F11 50%);
+        background-image: linear-gradient(to right, #0F0F11 50%, #18181B 50%);
     }
 }
 
